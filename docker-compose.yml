@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+
+  mpich:
+    container_name: ${PROJECT_NAME}-mpcih
+    image: mfisherman/mpich
+    volumes:
+      - './:/project'
+    tty: true
